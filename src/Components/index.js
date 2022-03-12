@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {Nav, NavLink, Bars, NavMenu} from './NavElements';
 import './index.css'
 import Sidebar from './sidebar';
+import HUG from './hug-logo.png'
 
 const Navbar = () => {
 
@@ -15,7 +16,7 @@ const Navbar = () => {
     <Nav className='navbarItems'>
         <NavLink to="/">
             <div className='hug-logo-background'>
-                <img className='hug-logo' src='http://www.hug.com.ph/wp-content/uploads/2019/02/HUG-LOGO.png'>
+                <img className='hug-logo' src={HUG}>
 
                 </img>
             </div>
