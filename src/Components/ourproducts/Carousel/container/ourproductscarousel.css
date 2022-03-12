@@ -1,0 +1,10 @@
+.carousel-ourproducts{
+    margin: 20px;
+    display: flex;
+    max-height: 700px;
+}
+.nav-image-ourproducts{
+    width: 100%;
+    max-height: 700px;
+    border-radius: 20px;
+}

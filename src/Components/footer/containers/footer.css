@@ -1,0 +1,157 @@
+.footer-background{
+    height: 550px;
+    padding: 0px;
+    margin: auto;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("./website_footer2.png");
+    background-size: cover;
+}
+.footer-div{
+    padding-top: 70px;
+    padding-left: 150px;
+}
+.column-left{
+    border-right-style: solid;
+    border-color: #ffaa01;
+}
+.row2{
+    color: #ffaa01;
+}
+.row3{
+    color: #ffaa01;
+}
+.header-left{
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.header-right{
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.row4{
+    text-align: right;
+}
+.column-middle{
+    text-align: right;
+}
+.column-links{
+    padding-top: 5px;
+    text-align: left;
+    margin-left: 80px;
+}
+.fbicon{
+    background-color: #fff;
+    border-style: solid;
+    width: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.facebook-footer{
+    color:#ffaa01;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.facebook-footer:hover{
+    color: #42B7FF;
+    transition: 200ms ease-in;
+}
+.shicon{
+    background-color: #fff;
+    border-style: solid;
+    width: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.shopee-footer{
+    color:#ffaa01;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.shopee-footer:hover{
+    color: #ff3939;
+    transition: 200ms ease-in;
+}
+.laicon{
+    background-color: #fff;
+    border-style: solid;
+    width: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.lazada-footer{
+    color:#ffaa01;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.lazada-footer:hover{
+    color: #ff9e01;
+    transition: 200ms ease-in;
+}
+.follow-us{
+    color: #ffaa01;
+    font-size: 15px;
+    font-weight: bold;
+}
+.follow-us-fb{
+    width: 30px;
+    background-color: #ffaa01;
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.follow-us-fb:hover{
+    background-color: #0062ff;
+    transition: 200ms ease-in;
+}
+.follow-us-tw{
+    width: 30px;
+    background-color: #ffaa01;
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.follow-us-tw:hover{
+    background-color: #42B7FF;
+    transition: 200ms ease-in;
+}
+.follow-us-ig{
+    width: 30px;
+    background-color: #ffaa01;
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.follow-us-ig:hover{
+    background-color: #b71dff;
+    transition: 200ms ease-in;
+}
+.follow-us-yt{
+    width: 30px;
+    background-color: #ffaa01;
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.follow-us-yt:hover{
+    background-color:#ff3939;
+    transition: 200ms ease-in;
+}
+
+
+@media screen and (max-width: 860px) {
+    .footer-background{
+        height: 130px;
+    }
+    .footer-div{
+        
+    }
+}

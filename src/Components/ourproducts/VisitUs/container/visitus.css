@@ -1,0 +1,79 @@
+.VisitUs{
+    background-color: hsl(0, 0%, 85%);
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+.container{
+    padding: 15px;
+}
+.title{
+    font-weight: bold;
+}
+.group-buttons{
+    justify-content: center;
+}
+.facebook-logo{
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+}
+.facebook-button{
+    background-color: #2088ff;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.facebook-button:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.shopee-button{
+    background-color: #ff1c1c;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.shopee-button:hover{
+    color: white;
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.lazada-button{
+    background-color: #FF6600;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.lazada-button:hover{
+    color: white;
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: 0.5s;
+}

@@ -1,0 +1,17 @@
+.hug-logo{
+    width: 150px;
+ }
+ 
+ .nav-links:hover{
+     color: #000;
+     transition: 200ms ease-in;
+ }
+ .hug-logo-background{
+     width: 100%;
+     padding-top: 25px;
+     padding-left: 5px;
+     padding-right: 5px;
+     background: #fff;
+     border-radius: 10px;
+     margin-bottom: 20px;
+ }
