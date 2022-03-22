@@ -1,3 +1,7 @@
+.home-page{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 .lorem{
     font-size: 100px;
     font-family: 'Montserrat', sans-serif;

@@ -1,18 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
+import './hero.css'
+
 
 const Section = styled.section`
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #D9D9D9;
 `;
 
 const Container = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     padding: 3rem calc((100vw - 1300px) / 2);
     font-family: 'Montserrat', sans-serif;
 
@@ -23,32 +24,54 @@ const Container = styled.div`
 
 const ColumnLeft = styled.div`
     display: flex;
-    color: #000;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 5rem 3rem;
 
     h1{
-        margin-bottom: 0.5rem;
         font-size: 72px;
     }
+    h2{
+        font-size: 45px;
+    }
     p{
-        margin: 2rem 0;
-        font-size: 25px;
+        margin-bottom: 4rem;
+        font-size: 30px;
         line-height: 1.1;
+    }
+
+    @media only screen and (min-width: 300px) and (max-width: 600px){
+        h1{
+            font-size: 60px;
+        }
+        h2{
+            font-size: 35px;
+        }
+        p{
+            margin-bottom: 2rem;
+            font-size: 25px;
+            line-height: 1.1;
+        }
     }
 `;
 
 const Button = styled(motion.button)`
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    border: 2px solid #000;
+    padding: 5px;
+    width: 55%;
+    height: 25%;
+    font-size: 1.5rem;
+    border: 2px solid #fff;
     border-radius: 4px;
+    border-color: #feb10d;
     outline: none;
     cursor: pointer;
     background: transparent;
-    color: #000;
+    color: #feb10d;
+    
+    @media only screen and (min-width: 300px) and (max-width: 600px){
+        
+    }
 `;
 
 const Hero = () => {
@@ -58,32 +81,40 @@ const Hero = () => {
     }
 
   return (
-    <Section>
+    <Section className='hero-background'>
         <Container>
             <ColumnLeft>
-            <motion.h1
+            <motion.h2
+                className='hero-headline'
                 initial={{opacity:0}}
                 animate={{opacity: 1}}
                 transition={{duration: 1}}
-            >Headline</motion.h1>
+            >Quality yet</motion.h2>
+            <motion.h1
+                className='hero-headline'
+                initial={{opacity:0}}
+                animate={{opacity: 1}}
+                transition={{duration: 1}}
+            >Affordable</motion.h1>
             <motion.p
+                className='hero-paragraph'
                 variants={fadeLeft}
                 initial='hidden'
                 animate='visible'
                 transition={{duration: 1}}
-            >What we do</motion.p>
+            >Electronics</motion.p>
             <Button
             whileHover={{scale: 1.05}}
             whileTap={{
                 scale: 0.95,
                 backgroundColor: '#858585',
                 border: 'none',
-                color: '#000'
+                color: '#fff'
             }}
             initial={{opacity: 0}}
             animate={{opacity: 1, transition:{duration: 1.5} }}
             
-            >Shop Now!</Button> 
+            >SHOP NOW</Button> 
             </ColumnLeft>
         </Container>
     </Section>

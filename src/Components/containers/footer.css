@@ -1,0 +1,29 @@
+.hug-mascot-footer{
+    width: 150px;
+    height: 210px;
+    margin-left: 20px;
+}
+
+.hug-logo-footer{
+    width: 150px;
+}
+
+.hug-name-footer{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.facebook-footer:hover{
+    color: #42B7FF;
+    transition: 200ms ease-in;
+}
+
+.shopee-footer:hover{
+    color: #ff4242;
+    transition: 200ms ease-in;
+}
+
+.lazada-footer:hover{
+    color: #ff8e42;
+    transition: 200ms ease-in;
+}

@@ -7,7 +7,7 @@ export const homeObjOne = {
     headLine: 'Lorem Ipsum',
     description: 'To provide high quality electronic products with incomparable features that will suit the needs of every individual and provide exceptional after sales service.',
     imgStart: false,
-    img: require('../images/shop.svg').default,
+    img: require('./Hugs_Mascot.png'),
     alt: 'Car',
     dark: true,
     primary: true,

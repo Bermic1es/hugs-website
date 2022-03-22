@@ -1,98 +1,111 @@
 import React from "react";
 import Footer from "..";
 import './footer.css'
-import Background from './website_footer2.png'
 import { Container, Row, Col } from "react-bootstrap";
 import FacebookFooter from './facebook_footer.png'
 import TwitterFooter from './twitter_footer.png'
 import InstagramFooter from './instagram_footer.png'
-import YoutubeFooter from './youtube_footer.png'
-import LazadaFooter from './lazada_footer.png'
-import LocationFooter from './location_footer.png'
-import PhoneFooter from './phone_footer.png'
-import GlobeFooter from './globe_footer.png'
+import TiktokFooter from './tiktok_footer.png'
+import {RiMapPin2Fill} from 'react-icons/ri';
+import {ImPhone} from 'react-icons/im'
+import {BsGlobe} from 'react-icons/bs'
+import Fade from 'react-reveal/Fade'
 
 export function FooterContainer(){
 
     return(
         <div className="footer-background">
-            <div className="footer-div">
+            <Fade right>
                 <Container className="footer-container">
-                    <Row className="row1">
+                    <div className="footer-div">
+                        
+                            <Row className="row1">
 
-                        <Col className="column-left">
-                            <Row className="row2">
-                                <h4 className="header-left">Reach Us</h4>
-                                <Col sm={12}>
-                                    <p>Address</p>
+                                <Col className="column-left">
+                                    <Row className="row2">
+                                        <h4 className="header-left">Reach Us</h4>
+                                        <Col className="column-left-info" sm={12}>
+                                            <p className="info-para"><RiMapPin2Fill className="info-icon"/> 1011 Romualdez St. UN Avenue Ermita Manila</p>
+                                        </Col>
+                                        <Col className="column-left-info" sm={12}>
+                                            <p className="info-para"><ImPhone className="info-icon"/> (02) 353-5333 | +63 917-872-1111</p>
+                                        </Col>
+                                        <Col className="column-left-info" sm={12}>
+                                            <p className="info-para"><BsGlobe className="info-icon"/> sales@hug.com.ph</p>
+                                        </Col>
+                                    </Row>
                                 </Col>
-                                <Col sm={12}>
-                                    <p>Address</p>
+
+                                <Col className="column-right">
+                                    <Row className="row3">
+                                        <h4 className="header-right">Shop Now</h4>
+                                        
+                                        <Col className="column-links" sm={12}>
+                                            <a href="https://www.lazada.com.ph/shop/hug1629968689/?path=promotion-32522-0.htm&tab=promotion"
+                                            className="lazada-footer"
+                                            target="_blank"
+                                            >
+                                            <img  className="laicon"/>
+                                            Lazada
+                                            </a>
+                                        </Col>
+
+                                        <Col className="column-links" sm={12}>
+                                            <a href="https://shopee.ph/hugofficialstore"
+                                            className="shopee-footer"
+                                            target="_blank"
+                                            >
+                                            <img className="shicon"/>
+                                            Shopee
+                                            </a>
+                                        </Col>
+
+                                        <Col className="column-links" sm={12}>
+                                            <a href="https://www.facebook.com/HUGOfficialStore/"
+                                            className="facebook-footer"
+                                            target="_blank"
+                                            >
+                                            <img className="fbicon"/>
+                                            Facebook 
+                                            </a>
+                                        </Col>
+                                    </Row>
                                 </Col>
-                                <Col sm={12}>
-                                    <p>Address</p>
+
+                                <Col className="follow-us-column" xs lg={12}>
+                                    <Row>
+                                        <Col className="column-middle" xs lg={10}>
+                                            <p className="follow-us">Follow Us</p>
+                                        </Col>
+                                        <Col className="column-middle-links" xs lg={2}>
+                                            <a href="https://www.facebook.com/HUGOfficialStore/"
+                                            className=""
+                                            target="_blank">
+                                                <img className='follow-us-fb'/>
+                                            </a>
+
+                                            <a href="https://www.instagram.com/hugofficialph/"
+                                            className=""
+                                            target="_blank">
+                                                <img className='follow-us-ig'/>
+                                            </a>
+
+                                            <a href="https://www.tiktok.com/@hugofficialstore"
+                                            className=""
+                                            target="_blank">
+                                                <img src={TiktokFooter} className='follow-us-tk'/>
+                                            </a>
+                                        </Col>
+                                    </Row>
                                 </Col>
+
+                                
+
                             </Row>
-                        </Col>
-
-                        <Col className="column-right">
-                            <Row className="row3">
-                                <h4 className="header-right">Shop Now</h4>
-                                <Col className="column-links" sm={12}>
-                                    <a href="#"
-                                    className="facebook-footer"
-                                    >
-                                    <i className="fab fa-facebook-f fbicon"/>
-                                    Facebook 
-                                    </a>
-                                </Col>
-                                <Col className="column-links" sm={12}>
-                                    <a href="#"
-                                    className="shopee-footer"
-                                    >
-                                    <i className="fa-solid fa-s shicon"/>
-                                    Shopee
-                                    </a>
-                                </Col>
-                                <Col className="column-links" sm={12}>
-                                    <a href="#"
-                                    className="lazada-footer"
-                                    >
-                                    <i className="fa-solid fa-l laicon"/>
-                                    Lazada
-                                    </a>
-                                </Col>
-                            </Row>
-                        </Col>
-
-                    </Row>
-
-                    <Row className="row4">
-                        <Col className="column-middle" sm={{span: 7, offset:3}}>
-                            <p className="follow-us">Follow Us</p>
-                        </Col>
-                        <Col className="column-middle" sm={2}>
-                            <a href=""
-                            className="">
-                                <img src={FacebookFooter} className='follow-us-fb'/>
-                            </a>
-                            <a href=""
-                            className="">
-                                <img src={TwitterFooter} className='follow-us-tw'/>
-                            </a>
-                            <a href=""
-                            className="">
-                                <img src={InstagramFooter} className='follow-us-ig'/>
-                            </a>
-                            <a href=""
-                            className="">
-                                <img src={YoutubeFooter} className='follow-us-yt'/>
-                            </a>
-                        </Col>
-                    </Row>
-                    
+                            
+                    </div>
                 </Container>
-            </div>
+            </Fade>
         </div>
     )
 }

@@ -12,24 +12,22 @@ const FeaturedContainer = () => {
         <Container className='inner-container'>
             <h1 className='featured'>Featured Products</h1>
             <Row className='row'>
-                <Col className='col'>
+                <Col lg={6} className='col'>
                     <img className='featured2' src={Featured1} alt=''>
                             
                     </img>
                 </Col>
-                <Col className='col'>
+                <Col lg={6} className='col'>
                     <img className='featured2' src={Featured2} alt=''>
                             
                     </img>
                 </Col>
-            </Row>
-            <Row className='row'>
-                <Col className='col'>
+                <Col lg={6} className='col'>
                     <img className='featured2' src={Featured3} alt=''>
                             
                     </img>
                 </Col>
-                <Col className='col'>
+                <Col lg={6} className='col'>
                     <img className='featured2' src={Featured4} alt=''>
                             
                     </img>

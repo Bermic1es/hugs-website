@@ -1,5 +1,6 @@
 import React from 'react'
 import Slide from 'react-reveal/Slide'
+import LightSpeed from 'react-reveal/LightSpeed';
 
 
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap } from './InfoElements'
@@ -21,7 +22,9 @@ const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headLine,darkText,de
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                        <Img src={img} alt={alt}/> 
+                        <LightSpeed right>
+                        <Img src={img} alt={alt}/>
+                        </LightSpeed>
                         </ImgWrap>
                     </Column2>
                 </InfoRow>

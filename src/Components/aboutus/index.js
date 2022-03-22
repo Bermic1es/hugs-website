@@ -6,6 +6,7 @@ import ScrollToTop from '../ScrollToTop'
 import ScrollIndicator from '../ScrollLoad/sload'
 import HeroSection from './HeroSection'
 import InfoSection from './InfoSection'
+import StepperStory from './Stepper'
 import { homeObjOne } from './InfoSection/Data'
 import Footer from '../footer'
 
@@ -15,8 +16,9 @@ const AboutUs = () => {
       <Navbar/>
       <HeroSection/>
       <InfoSection {...homeObjOne}/>
-      <ScrollToTop/>
+      <StepperStory/>
       <ScrollIndicator/>
+      <ScrollToTop/>
       <Footer/>
     </div>
   )

@@ -1,0 +1,14 @@
+.hero-headline{
+    color: #000;
+}
+.hero-paragraph{
+    font-style: italic;
+    color: #000;
+    font-weight: bold;
+}
+.hero-background{
+    background-image: url("./Hero_Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

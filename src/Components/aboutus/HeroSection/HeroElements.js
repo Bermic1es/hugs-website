@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 670px;
+    height: 600px;
     position: relative;
     z-index: 1;
     font-family: 'Montserrat', sans-serif;
@@ -23,6 +23,15 @@ export const HeroContainer = styled.div`
     }
 `
 
+export const StatusCardsContainer = styled.div`    
+    z-index: 50;  
+    flex-wrap: wrap; 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 620px;
+`
+
 export const HeroBg = styled.div`
     position: absolute;
     top: 0;
@@ -32,29 +41,25 @@ export const HeroBg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
-    
-    :before{
-        content: '';
-        position: absolute;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
 `
-
+export const Overlay = styled.div`
+    background-color: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+` 
 export const VideoBg = styled.video`
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
-
 `
 
 export const HeroContent = styled.div`
+    margin-bottom: 100px;
     z-index: 3;
     max-width: 1200px;
     position: absolute;
