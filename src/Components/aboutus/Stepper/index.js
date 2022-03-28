@@ -25,7 +25,7 @@ const StepperStory = () => {
                 {selectedButton >= 1
                   ? <ListItem State={!State} onClick={() => changeSelected("FirstCard","3%", 1)}>
                       <BigCircle State={!State}></BigCircle>
-                      <ItemText>LOREM IPSUM</ItemText>
+                      <ItemText>The Beginning of HUG</ItemText>
                       <SmallCircle State={!State}></SmallCircle>
                     </ListItem>                
                   : <ListItem State={State} onClick={() => changeSelected("FirstCard","3%", 1)}>
@@ -37,7 +37,7 @@ const StepperStory = () => {
                 {selectedButton >= 2
                 ? <ListItem State={!State} onClick={() => changeSelected("SecondCard","25%", 2)}>
                     <BigCircle State={!State}></BigCircle>
-                    <ItemText>LOREM IPSUM</ItemText>
+                    <ItemText>ISO Certified</ItemText>
                     <SmallCircle State={!State}></SmallCircle>
                   </ListItem>                
                 : <ListItem State={State} onClick={() => changeSelected("SecondCard","25%", 2)}>
@@ -49,7 +49,7 @@ const StepperStory = () => {
                 {selectedButton >= 3
                 ? <ListItem State={!State} onClick={() => changeSelected("ThirdCard","50%", 3)}>
                     <BigCircle State={!State}></BigCircle>
-                    <ItemText>LOREM IPSUM</ItemText>
+                    <ItemText>Training Program</ItemText>
                     <SmallCircle State={!State}></SmallCircle>
                   </ListItem>                
                 : <ListItem State={State} onClick={() => changeSelected("ThirdCard","50%", 3)}>
@@ -61,7 +61,7 @@ const StepperStory = () => {
                 {selectedButton >= 4
                 ? <ListItem State={!State} onClick={() => changeSelected("FourthCard","75%", 4)}>
                     <BigCircle State={!State}></BigCircle>
-                    <ItemText>LOREM IPSUM</ItemText>
+                    <ItemText>The "HUG" Name</ItemText>
                     <SmallCircle State={!State}></SmallCircle>
                   </ListItem>                
                 : <ListItem State={State} onClick={() => changeSelected("FourthCard","75%", 4)}>
@@ -73,7 +73,7 @@ const StepperStory = () => {
                 {selectedButton >= 5
                 ? <ListItem State={!State} onClick={() => changeSelected("FifthCard","100%", 5)}>
                     <BigCircle State={!State}></BigCircle>
-                    <ItemText>LOREM IPSUM</ItemText>
+                    <ItemText>HUG Today</ItemText>
                     <SmallCircle State={!State}></SmallCircle>
                   </ListItem>                
                 : <ListItem State={State} onClick={() => changeSelected("FifthCard","100%", 5)}>

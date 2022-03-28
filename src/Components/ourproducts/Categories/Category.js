@@ -38,10 +38,10 @@ const Category = ()=>{
                                     <div className="col-md-4 mb-4" key={id}>
                                 <div className="card">
                                     <img src={image} className="card-img-top" alt="..."/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">{title}</h5>
-                                            {/* <p>₱ {price}</p> */}
-                                        </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">{title}</h5>
+                                        {/* <p>₱ {price}</p> */}
+                                    </div>
                                 </div>
                             </div>
                                     </>
