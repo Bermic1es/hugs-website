@@ -12,7 +12,7 @@ const Sidebar = ({isOpen, toggle}) => {
         </Icon>
         <SidebarWrapper>
             <SidebarMenu>
-                <SidebarLink className='nav-links' to="/home" activeStyle>
+                <SidebarLink className='nav-links' to="/" activeStyle>
                     Home
                 </SidebarLink>
                 <SidebarLink className='nav-links' to="/aboutus" activeStyle>

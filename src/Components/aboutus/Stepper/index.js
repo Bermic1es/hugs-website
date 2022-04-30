@@ -30,7 +30,7 @@ const StepperStory = () => {
                     </ListItem>                
                   : <ListItem State={State} onClick={() => changeSelected("FirstCard","3%", 1)}>
                       <BigCircle State={State}></BigCircle>
-                      <ItemText>LOREM IPSUM</ItemText>
+                      <ItemText>The Beginning of HUG</ItemText>
                       <SmallCircle State={State}></SmallCircle>
                   </ListItem>
                 }
@@ -42,7 +42,7 @@ const StepperStory = () => {
                   </ListItem>                
                 : <ListItem State={State} onClick={() => changeSelected("SecondCard","25%", 2)}>
                     <BigCircle State={State}></BigCircle>
-                    <ItemText>LOREM IPSUM</ItemText>
+                    <ItemText>ISO Certified</ItemText>
                     <SmallCircle State={State}></SmallCircle>
                 </ListItem>
                 }  
@@ -54,7 +54,7 @@ const StepperStory = () => {
                   </ListItem>                
                 : <ListItem State={State} onClick={() => changeSelected("ThirdCard","50%", 3)}>
                     <BigCircle State={State}></BigCircle>
-                    <ItemText>LOREM IPSUM</ItemText>
+                    <ItemText>Training Program</ItemText>
                     <SmallCircle State={State}></SmallCircle>
                 </ListItem>
                 }
@@ -66,7 +66,7 @@ const StepperStory = () => {
                   </ListItem>                
                 : <ListItem State={State} onClick={() => changeSelected("FourthCard","75%", 4)}>
                     <BigCircle State={State}></BigCircle>
-                    <ItemText>LOREM IPSUM</ItemText>
+                    <ItemText>The "HUG" Name</ItemText>
                     <SmallCircle State={State}></SmallCircle>
                 </ListItem>
                 }
@@ -78,7 +78,7 @@ const StepperStory = () => {
                   </ListItem>                
                 : <ListItem State={State} onClick={() => changeSelected("FifthCard","100%", 5)}>
                     <BigCircle State={State}></BigCircle>
-                    <ItemText>LOREM IPSUM</ItemText>
+                    <ItemText>HUG Today</ItemText>
                     <SmallCircle State={State}></SmallCircle>
                 </ListItem>
                 }                                                                                                        

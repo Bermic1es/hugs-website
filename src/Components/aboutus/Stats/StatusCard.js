@@ -1,39 +1,68 @@
 import CardBody from '@material-tailwind/react/CardBody';
-import { CardsContainer, Card, CardContent, Img, Title, Paragraph } from './StatusCardsElements';
+import { CardsContainer, Card, CardContent, Icon, Title, Paragraph, Img } from './StatusCardsElements';
+import { motion } from "framer-motion";
 
-
-
-const colors = {
-    blueGray: 'bg-blue-gray-500',
-    gray: 'bg-gray-500',
-    brown: 'bg-brown-500',
-    deepOrange: 'bg-deep-orange-500',
-    orange: 'bg-orange-500',
-    amber: 'bg-amber-500',
-    yellow: 'bg-yellow-600',
-    lime: 'bg-lime-500',
-    lightGreen: 'bg-light-green-500',
-    green: 'bg-green-500',
-    teal: 'bg-teal-500',
-    cyan: 'bg-cyan-500',
-    lightBlue: 'bg-light-blue-500',
-    blue: 'bg-blue-500',
-    indigo: 'bg-indigo-500',
-    deepPurple: 'bg-deep-purple-500',
-    purple: 'bg-purple-500',
-    pink: 'bg-pink-500',
-    red: 'bg-red-500',
-};
-
-export default function StatusCard({ img, title, widthinput, children }) {
+const sentence = {
+    hidden: {
+        opacity: 1
+    },
+    visible: {
+        opacity:1,
+        transition: {
+            staggerChildren: 0.02,
+        }
+    }
+}
+const letter = {
+    hidden: {
+        opacity: 0, 
+        y: 50
+    },
+    visible: {
+        opacity:1,
+        y: 50
+    }
+}
+const cardHeader = {
+    hidden: {
+        opacity: 0, 
+        scale: 0
+    },
+    visible: {
+        opacity:1,
+        scale: 1,
+        transition: {
+            type: 'spring',
+            duration: 0.5
+        }
+    }
+}
+export default function StatusCard({ img, title, children }) {
     return (
         <CardsContainer>
-            <Card>
-                <CardBody>                                                                      
-                    <Img style={{width: widthinput}} src={img}/>                    
-                    <Title> {title}</Title>
-                    <Paragraph>{children}</Paragraph>
-                </CardBody>
+            <Card>                                                                      
+                <Img>{img}</Img>                
+                <Title
+                    variants ={cardHeader}
+                    initial="hidden"
+                    animate="visible"
+                > 
+                    {title}
+                </Title>
+                <Paragraph
+                    variants ={sentence}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    {children.split("").map((char,index) => {
+                        return(
+                            <motion.span key={char + "-" + index} 
+                            variants={letter}>
+                                {char}
+                            </motion.span>
+                        )}
+                    )}
+                </Paragraph>
             </Card>
         </CardsContainer>
     );

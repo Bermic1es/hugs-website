@@ -4,6 +4,7 @@
     color: #000;
     font-weight: bold;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .container{
     padding: 15px;
@@ -23,7 +24,7 @@
     background-color: #2088ff;
     border-radius: 10px;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -42,7 +43,7 @@
     background-color: #ff1c1c;
     border-radius: 10px;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -62,7 +63,7 @@
     background-color: #FF6600;
     border-radius: 10px;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 38px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

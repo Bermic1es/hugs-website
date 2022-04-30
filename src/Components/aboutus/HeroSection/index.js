@@ -1,51 +1,34 @@
 import React from 'react'
 import Video from '../../videos/video.mp4'
-import {HeroContainer, HeroBg, VideoBg, HeroContent,HeroH1,HeroP,StatusCardsContainer,Overlay} from './HeroElements';
-import Flash from 'react-reveal/Flash'
+import {HeroContainer, HeroBg, VideoBg,StatusCardsContainer} from './HeroElements';
 import StatusCard from '../Stats/StatusCard'
-import star from '../images/star.svg';
-import growth from '../images/growth.svg';
-import product from '../images/product.svg';
+import { GrowthIcon, ProductIcon, StarIcon } from '../Stats/IconStyles';
 
 const HeroSection = () => {
   return (
     <HeroContainer>       
         <HeroBg>
-            <Overlay></Overlay>
             <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>           
         </HeroBg>              
-        <HeroContent>
-          <Flash>
-              <HeroH1>
-              Quality You can Trust. Prices You can Pay.
-              </HeroH1>
-              <HeroP>
-              Our business offers quality yet affordable electronic products, home appliances, gadgets, accessories, and a lot more for the masses
-              </HeroP>
-          </Flash>          
-        </HeroContent>
         <StatusCardsContainer>
             <StatusCard
-                img = {growth}                                              
+                img={<GrowthIcon/>}                                              
                 title="YEARS OF EXPERIENCE"
-                widthinput = "7%"
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                18 YEARS since being ISO Certified.
             </StatusCard>
             <StatusCard
-                img = {product}
+                img={<ProductIcon/>} 
                 title="PRODUCTS SOLD"
-                widthinput = "10%"
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Over 410,000 products sold on both Shopee and Lazada combined.
             </StatusCard>
             <StatusCard
-                img = {star}
+                img={<StarIcon/>} 
                 title="RATINGS"
                 widthinput = "7%"
-            >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                
+            >            
+                4.8 / 5 Stars Rating on Shopee and 96% Positive Seller Ratings on Lazada.
             </StatusCard>
           </StatusCardsContainer>
         

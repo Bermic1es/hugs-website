@@ -25,7 +25,7 @@ const Navbar = () => {
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Bars onClick={toggle}/>
         <NavMenu>
-            <NavLink className='nav-links' to="/home" activeStyle>
+            <NavLink className='nav-links' to="/" activeStyle>
                 Home
             </NavLink>
             <NavLink className='nav-links' to="/aboutus" activeStyle>

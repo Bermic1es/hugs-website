@@ -5,7 +5,6 @@ import './hero.css'
 
 
 const Section = styled.section`
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,13 +13,15 @@ const Section = styled.section`
 const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 3rem calc((100vw - 1300px) / 2);
+    padding: 7.31rem;
     font-family: 'Montserrat', sans-serif;
-
+    
     @media screen and (max-width: 768px){
         grid-grid-template-columns: 1fr;
     }
 `;
+
+
 
 const ColumnLeft = styled.div`
     display: flex;
@@ -80,9 +81,14 @@ const Hero = () => {
         visible: {opacity: 1, x:0}
     }
 
+    const scrollToBottom = () => window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth"
+    })
+
   return (
-    <Section className='hero-background'>
-        <Container>
+    <Section>
+        <Container className='hero-background'>
             <ColumnLeft>
             <motion.h2
                 className='hero-headline'
@@ -103,17 +109,18 @@ const Hero = () => {
                 animate='visible'
                 transition={{duration: 1}}
             >Electronics</motion.p>
+            
             <Button
             whileHover={{scale: 1.05}}
             whileTap={{
                 scale: 0.95,
-                backgroundColor: '#858585',
+                backgroundColor: '#feb10d',
                 border: 'none',
                 color: '#fff'
             }}
             initial={{opacity: 0}}
             animate={{opacity: 1, transition:{duration: 1.5} }}
-            
+            onClick={scrollToBottom}
             >SHOP NOW</Button> 
             </ColumnLeft>
         </Container>

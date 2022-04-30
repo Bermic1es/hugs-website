@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import Footer from "..";
 import './footer.css'
 import { Container, Row, Col } from "react-bootstrap";
@@ -15,12 +15,10 @@ export function FooterContainer(){
 
     return(
         <div className="footer-background">
-            <Fade right>
+                <Fade right>
                 <Container className="footer-container">
                     <div className="footer-div">
-                        
                             <Row className="row1">
-
                                 <Col className="column-left">
                                     <Row className="row2">
                                         <h4 className="header-left">Reach Us</h4>
@@ -98,14 +96,10 @@ export function FooterContainer(){
                                         </Col>
                                     </Row>
                                 </Col>
-
-                                
-
                             </Row>
-                            
                     </div>
                 </Container>
-            </Fade>
+                </Fade>
         </div>
     )
 }

@@ -1,13 +1,15 @@
 import React from 'react'
 import {Carousel} from 'react-bootstrap'
-import Pic1 from '../Images/carousel_2.jpg'
-import Pic2 from '../Images/carousel_4.jpg'
+import Pic1 from '../Images/carousel_1.jpg'
+import Pic2 from '../Images/carousel_2.jpg'
 import Pic3 from '../Images/carousel_5.jpg'
 import './ourproductscarousel.css'
+import Fade from 'react-reveal/Fade';
 
 const OurProductsCarousel = () => {
   return (
-    <Carousel className='carousel-ourproducts' fade>
+    <Fade>
+    <Carousel className='carousel-ourproducts' slide>
         <Carousel.Item interval={4000}>
             <img
             className="nav-image-ourproducts"
@@ -30,6 +32,7 @@ const OurProductsCarousel = () => {
             />
         </Carousel.Item>
     </Carousel>
+    </Fade>
   )
 }
 

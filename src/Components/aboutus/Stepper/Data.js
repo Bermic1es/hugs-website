@@ -8,7 +8,7 @@ export default [
     [
         {
             title: "ISO Certified",
-            name: "Since being granted ISO Certificate in April 2004, the company provides over 3000 overseas employments, and its main manufacturing area located at Shen Zhen City, Just 15 minutes drive from Bao-An Airport, already occupies an 18,000 sq. meter production area which fully equipped with state of the art machinery."
+            name: "Since being granted ISO Certificate in April 2004, the company provides over 3000 overseas employments, and its main manufacturing area located at Shen Zhen City, just 15 minutes drive from Bao-An Airport, already occupies an 18,000 sq. meter production area, fully equipped with state of the art machinery."
         }
     ],
     [

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { motion } from "framer-motion";
 
 export const InfoContainer = styled.div`
     color: #fff;
@@ -51,18 +51,18 @@ export const TextWrapper = styled.div`
     padding-bottom: 0;
 `
 
-export const TopLine = styled.p`
+export const TopLine = styled(motion.p)`
     color: #ff8400;
-    font-size: 16px;
+    font-size:24px;
     line-height: 16px:
     font-weight: 700;
     letter_spacing: 1.4px;
     text-transform: uppercase;
     margin-top: 200px;
-    margin-left: 145px;
+    margin-left: 120px;
 `
 
-export const Heading = styled.h1`
+export const Heading = styled(motion.h1)`
     margin-bottom: 24px;
     font-size: 48px;
     font-weight: bold;
@@ -75,7 +75,7 @@ export const Heading = styled.h1`
     }
 `
 
-export const Subtitle = styled.p`
+export const Subtitle = styled(motion.p)`
     font-size: 18px;
     line-height: 24px;
     text-align: justify;

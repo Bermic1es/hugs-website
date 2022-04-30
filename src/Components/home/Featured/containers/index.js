@@ -5,10 +5,13 @@ import Featured1 from './featured_1.jpg';
 import Featured2 from './featured_2.jpg';
 import Featured3 from './featured_3.jpg';
 import Featured4 from './featured_4.jpg';
+import Fade from 'react-reveal/Fade';
 
 const FeaturedContainer = () => {
   return (
-    <Container className='container'>
+    
+    <Container className='containerFeatured'>
+        <Fade>
         <Container className='inner-container'>
             <h1 className='featured'>Featured Products</h1>
             <Row className='row'>
@@ -34,6 +37,7 @@ const FeaturedContainer = () => {
                 </Col>
             </Row>
         </Container>
+        </Fade>
     </Container>
   )
 }

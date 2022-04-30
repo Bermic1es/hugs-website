@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { keyframes } from 'styled-components';
+import { animated } from 'react-spring';
+import { motion } from "framer-motion";
 
 export const StoryContainer = styled.div`
     color: #fff;
-
+    
     @media screen and (max-width: 768px){
         padding: 100px 0;
     }
@@ -11,7 +13,7 @@ export const StoryContainer = styled.div`
 
 export const StoryWrapper = styled.div`
     z-index: 1;
-    height: 550px;
+    height: 470px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -21,27 +23,31 @@ export const StoryWrapper = styled.div`
     justify-content: center;
 `
 
-export const Card = styled.div`
+export const Card = styled(animated.div)`
   padding:30px 40px;
-  text-align:center; 	
+  text-align:center;
+  background: #f3f3f3;
 `
 
 export const ContentSection = styled.div`
   width:80%;
   margin: auto;
-  background: #f3f3f3;
+  background: #fff;
   border-radius: 4px;
 `
-export const CardTitle = styled.h2`
+export const CardTitle = styled(motion.h2)`
   font-size:17px;
+  font-weight: bold;
   text-transform:uppercase;
   color:#333;
   letter-spacing:1px;
+  font-family: 'Montserrat';
 `
-export const CardContent = styled.p`
+export const CardContent = styled(motion.p)`
   font-size:16px;
   ine-height:1.8em;
   color:#777;
+  font-family: 'proxima-nova';
 `
 export const Heading = styled.h1`
   padding-top: 50px;
@@ -51,6 +57,7 @@ export const Heading = styled.h1`
   text-transform: uppercase; 
   letter-spacing: 4px; 
   line-height: 23px;
+  font-family: 'Montserrat';
 `
 
 export const ProcessWrapper = styled.div`
@@ -89,6 +96,7 @@ export const ListItem = styled.li`
   vertical-align:bottom;
   height:60px;
   position:relative;
+  font-family: 'Montserrat';
   color: ${({State}) => (State ? 'orange' : 'gray')};
 
   :hover {

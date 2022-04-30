@@ -16,6 +16,7 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    border-bottom: 1px solid #4d2512;
 `
 
 export const NavLink = styled(Link)`

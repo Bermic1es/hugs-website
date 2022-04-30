@@ -6,10 +6,13 @@ import Image3 from '../images/carousel_3.jpg'
 import Image4 from '../images/carousel_4.jpg'
 import Image5 from '../images/carousel_5.jpg'
 import './carousel.css'
+import Fade from 'react-reveal/Fade';
 
 const CarouselContainer = () => {
+
   return (
-    <Carousel className='carousel' fade>
+    <Fade>
+    <Carousel className='carouselHome' slide>
         <Carousel.Item interval={4000}>
             <img
             className="nav-image"
@@ -47,6 +50,7 @@ const CarouselContainer = () => {
         </Carousel.Item>
         
     </Carousel>
+    </Fade>
   )
 }
 
