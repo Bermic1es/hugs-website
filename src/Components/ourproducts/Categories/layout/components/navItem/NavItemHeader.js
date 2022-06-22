@@ -15,7 +15,7 @@ const NavItemHeader = props => {
   );
 
   const onExpandChange = e => {
-    document.getElementById
+    e.preventDefault();
     setExpand(expanded => !expanded);
   };
 	

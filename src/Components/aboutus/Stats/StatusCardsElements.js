@@ -19,32 +19,29 @@ export const Card = styled(motion.div)`
     width: 100%;
     height: 200px; 
     border-radius: 0.75rem; 
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);      
-`
-export const CardContent = styled.div`
-    display: inline-flex; 
-    padding: 0.75rem; 
-    margin-bottom: 1.25rem; 
-    text-align: center; 
-    display: inline-flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 3rem; 
-    height: 3rem; 
-    border-radius: 9999px; 
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);       
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);     
+    
+    @media (max-width: 480px) { 
+        width: 100%;
+        height: 170px;
+    }
 `
 export const Img = styled.div`
-    margin: 0 0 10px 0;
+    margin: 20px 0 10px 0;
     padding-right: 0;
 `
 
 export const Title = styled(motion.h3)`
     color: black;
     font-family: 'Montserrat';
+
+    @media (max-width: 480px) { 
+        font-size: 20px;
+    }
 `
 
 export const Paragraph = styled(motion.p)`
+    margin: 0 10px 0 10px;
     color: #5c5957;
     font-family: 'proxima-nova';
     

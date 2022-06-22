@@ -8,6 +8,17 @@ export const InfoContainer = styled.div`
     @media screen and (max-width: 768px){
         padding: 100px 0;
     }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        height: 850px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+        height: 500px;
+    }
+    @media (min-width: 768px) and (max-width: 768px) {
+       height: 400px;
+    }
 `
 
 export const InfoWrapper = styled.div`
@@ -21,6 +32,10 @@ export const InfoWrapper = styled.div`
     margin-bottom: auto;
     padding: 0 24px;
     justify-content: center;
+
+    @media (min-width: 768px) and (max-width: 768px) {
+        height: 200px;
+    }
 `
 
 export const InfoRow = styled.div`
@@ -29,17 +44,26 @@ export const InfoRow = styled.div`
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 480px){
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'` )};
     }
+
 `
 
 export const Column1 = styled.div`    
     grid-area: col1;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-top: 170px;
+    }
 `
 
 export const Column2 = styled.div`
     grid-area: col2;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-top: 370px;
+    }
 `
 
 export const TextWrapper = styled.div`
@@ -49,6 +73,38 @@ export const TextWrapper = styled.div`
     margin-top: 40px;
     padding-top: 0;
     padding-bottom: 0;
+
+    @media (max-width: 480px) { 
+        margin: 0;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin: 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 768px) {
+        margin: 0;
+    }
+`
+export const TitleWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    @media (max-width: 480px) { 
+        margin-top: 160px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-top: 250px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+        margin-top: 120px;
+    }
+
+    @media (min-width: 768px) and (max-width: 768px) {
+        margin: 0;
+    }
 `
 
 export const TopLine = styled(motion.p)`
@@ -58,21 +114,6 @@ export const TopLine = styled(motion.p)`
     font-weight: 700;
     letter_spacing: 1.4px;
     text-transform: uppercase;
-    margin-top: 200px;
-    margin-left: 120px;
-`
-
-export const Heading = styled(motion.h1)`
-    margin-bottom: 24px;
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1.1;
-    font-weight: 600;
-    color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
-
-    @media screen and (max-width: 480px){
-        font-size: 32px;
-    }
 `
 
 export const Subtitle = styled(motion.p)`
@@ -82,19 +123,22 @@ export const Subtitle = styled(motion.p)`
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `
 
-export const BtnWrap = styled.div`
-    display: flex;
-    justify-content: flex-start;
-`
 
 export const ImgWrap = styled.div`
-    margin-top: 100px;
-    max-width: 550px;
+    display: flex;
+    justify-content: center;
     height: 100%;
+    
 `
 
 export const Img = styled.img`
     width: 90%;
-    margin: 0 0 10px 0;
-    padding-right: 0;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        width: 90%;
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px){
+        width: 90%;
+    }
 `

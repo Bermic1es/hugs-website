@@ -1,7 +1,4 @@
 .footer-background{
-    height: 480px;
-    padding: 0px;
-    margin: auto;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: #feb10d;
@@ -173,15 +170,18 @@
     transition: 200ms ease-in;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 350px) {
+@media (max-width: 480px) {
     .footer-background{
-        height: 735px;
+        width: 100%;
+        height: 100%;
+        background-image: url("./footer_horizontal.png");
+        background-position-y: 180px;
+        background-repeat: no-repeat;
+        background-size: 450px;
         background-color: #ffaa01;
     }
     .footer-container{
-        background-image: url("./footer_horizontal.png");
-        background-position-y: 225px;
-        background-size: 375px;
+        background-image: none;
     }
     .footer-div{
         display: flex;
@@ -300,17 +300,21 @@
         margin-right: 10px;
     }
 }
-
-@media only screen and (min-width: 351px) and (max-width: 400px) {
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
     .footer-background{
-        height: 735px;
+        width: 100%;
+        height: 100%;
+        background-image: url("./footer_horizontal.png");
+        background-position-y: 100px;
+        background-position-x: 100px;
+        background-repeat: no-repeat;
+        background-size: 450px;
         background-color: #ffaa01;
     }
     .footer-container{
-        background-image: url("./footer_horizontal.png");
-        background-position-y: 230px;
-        background-position-x: 30px;
-        background-size: 375px;
+        background-image: none;
     }
     .footer-div{
         display: flex;
@@ -338,7 +342,7 @@
     .column-links{
         font-size: 15px;
         text-align: left;
-        margin-right: 150px;
+        margin-right: 300px;
     }
     .row3{
         color: #fff;
@@ -429,22 +433,26 @@
         margin-right: 10px;
     }
 }
-
-@media only screen and (min-width: 401px) and (max-width: 450px) {
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 850px){
     .footer-background{
-        height: 734px;
+        width: 100%;
+        height: 100%;
+        background-image: url("./footer_horizontal.png");
+        background-position-y: -130px;
+        background-position-x: 430px;
+        background-repeat: no-repeat;
+        background-size: 400px;
         background-color: #ffaa01;
     }
     .footer-container{
-        background-image: url("./footer_horizontal.png");
-        background-position-y: 230px;
-        background-position-x: 75px;
-        background-size: 375px;
+        background-image: none;
     }
     .footer-div{
         display: flex;
         flex-direction: row-reverse;
-        margin-bottom: 50px;
+        margin-left: -230px;
     }
     .row2{
         color: #fff;
@@ -453,424 +461,19 @@
         color: #fff;
     }
     .header-left{
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
     }
     .info-para{
-        font-size: 14px;
+        font-size: 12px;
         text-align: left;
     }
     .header-right{
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
     }
     .column-links{
-        font-size: 15px;
-        text-align: left;
-        margin-right: 150px;
-    }
-    .row3{
-        color: #fff;
-    }
-    .fbicon{
-        background-image: url("./Facebook_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .facebook-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .shicon{
-        background-image: url("./Shopee_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .shopee-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .laicon{
-        background-image: url("./Lazada_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .lazada-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    .column-middle{
-        text-align: left;
-    }
-    .column-middle-links{
-        text-align: left;
-        margin-right: 130px;
-    }
-    .follow-us{
-        color: #fff;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .follow-us-fb{
-        background-image: url('./Facebook_Icon_Horizontal.png');
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-    .follow-us-ig{
-        background-image: url('./Instagram_Icon_Horizontal.png');
-        background-size: 17px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        padding: 3px;
-        border-radius: 9px;
-        margin-right: 10px;
-    }
-    .follow-us-tk{
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 8px;
-        margin-right: 10px;
-    }
-}
-
-@media only screen and (min-width: 451px) and (max-width: 500px) {
-    .footer-background{
-        height: 720px;
-        background-color: #ffaa01;
-    }
-    .footer-container{
-        background-image: url("./footer_horizontal.png");
-        background-position-y: 215px;
-        background-position-x: 130px;
-        background-size: 375px;
-    }
-    .footer-div{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-bottom: 50px;
-    }
-    .row2{
-        color: #fff;
-    }
-    .row3{
-        color: #fff;
-    }
-    .column-left{
-        margin-left: -180px;
-    }
-    .column-right{
-        margin-left: -35px;
-    }
-    .header-left{
-        font-size: 20px;
-        text-align: left;
-    }
-    .info-para{
-        font-size: 14px;
-        text-align: left;
-    }
-    .header-right{
-        font-size: 20px;
-        text-align: left;
-    }
-    .column-links{
-        font-size: 15px;
-        text-align: left;
-        margin-right: 150px;
-    }
-    .row3{
-        color: #fff;
-    }
-    .fbicon{
-        background-image: url("./Facebook_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .facebook-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .shicon{
-        background-image: url("./Shopee_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .shopee-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .laicon{
-        background-image: url("./Lazada_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .lazada-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    .column-middle{
-        text-align: left;
-        margin-left: -100px;
-    }
-    .column-middle-links{
-        text-align: left;
-        margin-right: 90px;
-    }
-    .follow-us{
-        color: #fff;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .follow-us-fb{
-        background-image: url('./Facebook_Icon_Horizontal.png');
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-    .follow-us-ig{
-        background-image: url('./Instagram_Icon_Horizontal.png');
-        background-size: 17px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        padding: 3px;
-        border-radius: 9px;
-        margin-right: 10px;
-    }
-    .follow-us-tk{
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 8px;
-        margin-right: 10px;
-    }
-}
-
-@media only screen and (min-width: 501px) and (max-width: 550px) {
-    .footer-background{
-        height: 720px;
-        background-color: #ffaa01;
-    }
-    .footer-container{
-        background-image: url("./footer_horizontal.png");
-        background-position-y: 215px;
-        background-position-x: 170px;
-        background-size: 375px;
-    }
-    .footer-div{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-bottom: 50px;
-    }
-    .row2{
-        color: #fff;
-    }
-    .row3{
-        color: #fff;
-    }
-    .column-left{
-        margin-left: -100px;
-    }
-    .column-right{
-        margin-left: -100px;
-    }
-    .header-left{
-        font-size: 20px;
-        text-align: left;
-    }
-    .info-para{
-        font-size: 14px;
-        text-align: left;
-    }
-    .header-right{
-        font-size: 20px;
-        text-align: left;
-    }
-    .column-links{
-        font-size: 15px;
-        text-align: left;
-        margin-right: 150px;
-    }
-    .row3{
-        color: #fff;
-    }
-    .fbicon{
-        background-image: url("./Facebook_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .facebook-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .shicon{
-        background-image: url("./Shopee_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .shopee-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .laicon{
-        background-image: url("./Lazada_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .lazada-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    .column-middle{
-        text-align: left;
-        margin-left: -100px;
-    }
-    .column-middle-links{
-        text-align: left;
-        margin-right: 90px;
-    }
-    .follow-us{
-        color: #fff;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .follow-us-fb{
-        background-image: url('./Facebook_Icon_Horizontal.png');
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-    .follow-us-ig{
-        background-image: url('./Instagram_Icon_Horizontal.png');
-        background-size: 17px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        padding: 3px;
-        border-radius: 9px;
-        margin-right: 10px;
-    }
-    .follow-us-tk{
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 8px;
-        margin-right: 10px;
-    }
-}
-
-@media only screen and (min-width: 700px) and (max-width: 799px) {
-    .footer-background{
-        height: 435px;
-        width: 925px;
-        background-color: #ffaa01;
-    }
-    .footer-container{
-        background-image: url("./footer_horizontal.png");
-        background-position-y: -15px;
-        background-position-x: 335px;
-        background-size: 335px;
-    }
-    .footer-div{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-bottom: 50px;
-    }
-    .row2{
-        color: #fff;
-    }
-    .row3{
-        color: #fff;
-    }
-    .column-left{
-        margin-left: -300px;
-    }
-    .header-left{
-        font-size: 20px;
-        text-align: left;
-    }
-    .info-para{
-        font-size: 14px;
-        text-align: left;
-    }
-    .header-right{
-        font-size: 20px;
-        text-align: left;
-    }
-    .column-links{
-        font-size: 15px;
+        font-size: 12px;
         text-align: left;
     }
     .row3{
@@ -878,495 +481,226 @@
     }
     .fbicon{
         background-image: url("./Facebook_Icon_Horizontal.png");
-        background-size: 20px;
+        background-size: 18px;
         background-repeat: no-repeat;
         border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .facebook-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .shicon{
-        background-image: url("./Shopee_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .shopee-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .laicon{
-        background-image: url("./Lazada_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .lazada-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    .column-middle{
-        text-align: left;
-    }
-    .column-middle-links{
-        text-align: left;
-        margin-right: 80px;
-    }
-    .follow-us{
-        color: #fff;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .follow-us-fb{
-        background-image: url('./Facebook_Icon_Horizontal.png');
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-    .follow-us-ig{
-        background-image: url('./Instagram_Icon_Horizontal.png');
-        background-size: 17px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        padding: 3px;
-        border-radius: 9px;
-        margin-right: 10px;
-    }
-    .follow-us-tk{
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 8px;
-        margin-right: 10px;
-    }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 900px) {
-    .footer-background{
-        height: 435px;
-        width: 925px;
-        background-color: #ffaa01;
-    }
-    .footer-container{
-        background-image: url("./footer_horizontal.png");
-        background-position-y: -15px;
-        background-position-x: 385px;
-        background-size: 335px;
-    }
-    .footer-div{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-bottom: 50px;
-    }
-    .row2{
-        color: #fff;
-    }
-    .row3{
-        color: #fff;
-    }
-    .column-left{
-        margin-left: -300px;
-    }
-    .header-left{
-        font-size: 20px;
-        text-align: left;
-    }
-    .info-para{
-        font-size: 14px;
-        text-align: left;
-    }
-    .header-right{
-        font-size: 20px;
-        text-align: left;
-    }
-    .column-links{
-        font-size: 15px;
-        text-align: left;
-    }
-    .row3{
-        color: #fff;
-    }
-    .fbicon{
-        background-image: url("./Facebook_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .facebook-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .shicon{
-        background-image: url("./Shopee_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .shopee-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .laicon{
-        background-image: url("./Lazada_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .lazada-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    .column-middle{
-        text-align: left;
-    }
-    .column-middle-links{
-        text-align: left;
-        margin-right: 80px;
-    }
-    .follow-us{
-        color: #fff;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .follow-us-fb{
-        background-image: url('./Facebook_Icon_Horizontal.png');
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-    .follow-us-ig{
-        background-image: url('./Instagram_Icon_Horizontal.png');
-        background-size: 17px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        padding: 3px;
-        border-radius: 9px;
-        margin-right: 10px;
-    }
-    .follow-us-tk{
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 8px;
-        margin-right: 10px;
-    }
-}
-
-@media only screen and (min-width: 901px) and (max-width: 1000px) {
-    .footer-background{
-        height: 435px;
-        width: 1105px;
-        background-color: #ffaa01;
-    }
-    .footer-container{
-        background-image: url("./footer_horizontal.png");
-        background-position-y: -15px;
-        background-position-x: 385px;
-        background-size: 335px;
-    }
-    .footer-div{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-bottom: 50px;
-    }
-    .row2{
-        color: #fff;
-    }
-    .row3{
-        color: #fff;
-    }
-    .column-left{
-        margin-left: -320px;
-    }
-    .header-left{
-        font-size: 20px;
-        text-align: left;
-    }
-    .info-para{
-        font-size: 14px;
-        text-align: left;
-    }
-    .header-right{
-        font-size: 20px;
-        text-align: left;
-    }
-    .column-links{
-        font-size: 15px;
-        text-align: left;
-    }
-    .row3{
-        color: #fff;
-    }
-    .fbicon{
-        background-image: url("./Facebook_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .facebook-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .shicon{
-        background-image: url("./Shopee_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .shopee-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .laicon{
-        background-image: url("./Lazada_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .lazada-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    .column-middle{
-        text-align: left;
-    }
-    .column-middle-links{
-        text-align: left;
-        margin-right: 80px;
-    }
-    .follow-us{
-        color: #fff;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .follow-us-fb{
-        background-image: url('./Facebook_Icon_Horizontal.png');
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-    .follow-us-ig{
-        background-image: url('./Instagram_Icon_Horizontal.png');
-        background-size: 17px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        padding: 3px;
-        border-radius: 9px;
-        margin-right: 10px;
-    }
-    .follow-us-tk{
-        background-size: 20px;
-        background-position: center;
-        height: 20px;
-        width: 20px;
-        background-color: #ffaa01;
-        border-radius: 8px;
-        margin-right: 10px;
-    }
-}
-
-@media only screen and (min-width: 1001px) and (max-width: 1100px) {
-    .footer-background{
-        height: 435px;
-        width: 1105px;
-        background-color: #ffaa01;
-    }
-    .footer-container{
-        background-image: url("./footer_horizontal.png");
-        background-position-y: -15px;
-        background-position-x: 620px;
-        background-size: 335px;
-    }
-    .footer-div{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-bottom: 50px;
-    }
-    .row2{
-        color: #fff;
-    }
-    .row3{
-        color: #fff;
-    }
-    .column-left{
-        margin-left: -190px;
-    }
-    .column-right{
-        margin-left: -80px;
-    }
-    .header-left{
-        font-size: 20px;
-        text-align: left;
-    }
-    .info-para{
-        font-size: 14px;
-        text-align: left;
-    }
-    .header-right{
-        font-size: 20px;
-        text-align: left;
-    }
-    .column-links{
-        font-size: 15px;
-        text-align: left;
-    }
-    .row3{
-        color: #fff;
-    }
-    .fbicon{
-        background-image: url("./Facebook_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .facebook-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .shicon{
-        background-image: url("./Shopee_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .shopee-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .laicon{
-        background-image: url("./Lazada_Icon_Horizontal.png");
-        background-size: 20px;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        height: 20px;
-        width: 20px;
-    }
-    .lazada-footer{
-        color:#fff;
-        font-size: 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .follow-us-column{
-        margin-left: -100px;
-    }
-    .column-middle{
-        text-align: left;
-    }
-    .column-middle-links{
-        margin-right: 10px;
-        text-align: left;
-    }
-    .follow-us{
-        color: #fff;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .follow-us-fb{
-        background-image: url('./Facebook_Icon_Horizontal.png');
-        background-size: 15px;
-        background-position: center;
-        height: 15px;
-        width: 15px;
-        background-color: #ffaa01;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-    .follow-us-ig{
-        background-image: url('./Instagram_Icon_Horizontal.png');
-        background-size: 15px;
-        background-position: center;
         height: 18px;
         width: 18px;
+    }
+    .facebook-footer{
+        color:#fff;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .shicon{
+        background-image: url("./Shopee_Icon_Horizontal.png");
+        background-size: 18px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 18px;
+        width: 18px;
+    }
+    .shopee-footer{
+        color:#fff;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .laicon{
+        background-image: url("./Lazada_Icon_Horizontal.png");
+        background-size: 18px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 18px;
+        width: 18px;
+    }
+    .lazada-footer{
+        color:#fff;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .column-middle{
+        text-align: left;
+    }
+    .column-middle-links{
+        text-align: left;
+        margin-right: 50px;
+    }
+    .follow-us{
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .follow-us-fb{
+        background-image: url('./Facebook_Icon_Horizontal.png');
+        background-size: 20px;
+        background-position: center;
+        height: 20px;
+        width: 20px;
+        background-color: #ffaa01;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .follow-us-ig{
+        background-image: url('./Instagram_Icon_Horizontal.png');
+        background-size: 17px;
+        background-position: center;
+        height: 20px;
+        width: 20px;
         background-color: #ffaa01;
         padding: 3px;
         border-radius: 9px;
         margin-right: 10px;
     }
     .follow-us-tk{
-        background-size: 15px;
+        background-size: 20px;
         background-position: center;
-        height: 15px;
-        width: 15px;
+        height: 20px;
+        width: 20px;
         background-color: #ffaa01;
         border-radius: 8px;
         margin-right: 10px;
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 851px) and (max-width: 1023px){
     .footer-background{
-        height: 410px;
+        width: 100%;
+        height: 100%;
+        background-image: url("./footer_horizontal.png");
+        background-position-y: -100px;
+        background-position-x: 540px;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-color: #ffaa01;
+    }
+    .footer-container{
+        background-image: none;
+    }
+    .footer-div{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: -230px;
+    }
+    .row2{
+        color: #fff;
+    }
+    .row3{
+        color: #fff;
+    }
+    .header-left{
+        font-size: 18px;
+        text-align: left;
+    }
+    .info-para{
+        font-size: 12px;
+        text-align: left;
+    }
+    .header-right{
+        font-size: 18px;
+        text-align: left;
+    }
+    .column-links{
+        font-size: 12px;
+        text-align: left;
+    }
+    .row3{
+        color: #fff;
+    }
+    .fbicon{
+        background-image: url("./Facebook_Icon_Horizontal.png");
+        background-size: 18px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 18px;
+        width: 18px;
+    }
+    .facebook-footer{
+        color:#fff;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .shicon{
+        background-image: url("./Shopee_Icon_Horizontal.png");
+        background-size: 18px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 18px;
+        width: 18px;
+    }
+    .shopee-footer{
+        color:#fff;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .laicon{
+        background-image: url("./Lazada_Icon_Horizontal.png");
+        background-size: 18px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 18px;
+        width: 18px;
+    }
+    .lazada-footer{
+        color:#fff;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .column-middle{
+        text-align: left;
+    }
+    .column-middle-links{
+        text-align: left;
+        margin-right: 50px;
+    }
+    .follow-us{
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .follow-us-fb{
+        background-image: url('./Facebook_Icon_Horizontal.png');
+        background-size: 20px;
+        background-position: center;
+        height: 20px;
+        width: 20px;
+        background-color: #ffaa01;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .follow-us-ig{
+        background-image: url('./Instagram_Icon_Horizontal.png');
+        background-size: 17px;
+        background-position: center;
+        height: 20px;
+        width: 20px;
+        background-color: #ffaa01;
+        padding: 3px;
+        border-radius: 9px;
+        margin-right: 10px;
+    }
+    .follow-us-tk{
+        background-size: 20px;
+        background-position: center;
+        height: 20px;
+        width: 20px;
+        background-color: #ffaa01;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1024px) and (max-width: 1279px){
+    .footer-background{
+        height:100%;
         padding: 0px;
         margin: auto;
         width: 100%;
@@ -1375,12 +709,12 @@
     }
     .footer-container{
         background-image: url("./website_footer.png");
-        background-size: 1160px;
+        background-size: 980px;
         background-repeat: no-repeat;
     }
     .footer-div{
-        padding-top: 30px;
-        padding-left: 180px;
+        padding-top: 0px;
+        padding-left: 125px;
     }
     .row1{
     }
@@ -1495,17 +829,16 @@
     .follow-us-column{
     }
     .follow-us{
-        color: #ffaa01;
+        color: #fff;
         font-size: 15px;
         font-weight: bold;
     }
     .follow-us-fb{
-        background-image: url("./facebook_footer.png");
+        background-image: url("./Facebook_Icon_Horizontal.png");
         background-size: 20px;
         background-repeat: no-repeat;
         width: 20px;
         height: 20px;
-        background-color: #ffaa01;
         border-radius: 50%;
         margin-right: 10px;
     }
@@ -1519,7 +852,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-color: #ffaa01;
-        border-radius: 5px;
         height: 20px;
         width: 20px;
         margin-right: 10px;
@@ -1529,7 +861,7 @@
         transition: 200ms ease-in;
     }
     .follow-us-tk{
-        background-size: 20px;
+        background-size: 10px;
         background-position: center;
         background-repeat: no-repeat;
         background-color: #ffaa01;
@@ -1543,4 +875,358 @@
         background-color:#000;
         transition: 200ms ease-in;
     }
+}
+
+@media (min-width: 1280px) and (max-width: 1300px){
+    .footer-background{
+        height:100%;
+        padding: 0px;
+        margin: auto;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #feb10d;
+    }
+    .footer-container{
+        background-image: url("./website_footer.png");
+        background-size: 1150px;
+        background-repeat: no-repeat;
+    }
+    .footer-div{
+        padding-top: 25px;
+        padding-left: 155px;
+    }
+    .row1{
+    }
+    .row2{
+        color: #ffaa01;
+    }
+    .row3{
+        color: #ffaa01;
+    }
+    .header-left{
+        font-weight: bold;
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .header-right{
+        font-weight: bold;
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .row4{
+        text-align: right;
+    }
+    .column-middle{
+        text-align: right;
+        padding-top: 5px;
+    }
+    .column-middle-links{
+        text-align: right;
+    }
+    .column-links{
+        padding-top: 8px;
+        text-align: left;
+    }
+    .column-left-info{
+        text-align: left;
+    }
+    .info-icon{
+        margin-right: 5px;
+    }
+    .info-para{
+        font-size: 18px;
+    }
+    .fbicon{
+        background-image: url("./Facebook_Icon.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    .facebook-footer{
+        color:#ffaa01;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .facebook-footer:hover{
+        color: #42B7FF;
+        transition: 200ms ease-in;
+    }
+    .facebook-footer:hover .fbicon{
+        background-image: url("./Facebook_Hover.png");
+        transition: 200ms ease-in;
+    }
+    .shicon{
+        background-image: url("./Shopee_Icon.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    .shopee-footer{
+        color:#ffaa01;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .shopee-footer:hover{
+        color: #ff3939;
+        transition: 200ms ease-in;
+    }
+    .shopee-footer:hover .shicon{
+        background-image: url("./Shopee_Hover.png");
+        transition: 200ms ease-in;
+    }
+    .laicon{
+        background-image: url("./Lazada_Icon.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    .lazada-footer{
+        color:#ffaa01;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .lazada-footer:hover{
+        color: #ff7301;
+        transition: 200ms ease-in;
+    }
+    .lazada-footer:hover .laicon{
+        background-image: url("./Lazada_Hover.png");
+        transition: 200ms ease-in;
+    }
+    .follow-us-column{
+    }
+    .follow-us{
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .follow-us-fb{
+        background-image: url("./Facebook_Icon_Horizontal.png");
+        background-size: 20px;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .follow-us-fb:hover{
+        background-color: #42B7FF;
+        transition: 200ms ease-in;
+    }
+    .follow-us-ig{
+        background-image: url("./instagram_footer.png");
+        background-size: 17px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ffaa01;
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+    .follow-us-ig:hover{
+        background-color: #b71dff;
+        transition: 200ms ease-in;
+    }
+    .follow-us-tk{
+        background-size: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ffaa01;
+        height: 20px;
+        width: 20px;
+        border: 0cm;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    .follow-us-tk:hover{
+        background-color:#000;
+        transition: 200ms ease-in;
+    }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .footer-background{
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #feb10d;
+    }
+    .footer-container{
+        background-image: url("./website_footer.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .footer-div{
+        padding-top: 40px;
+        padding-left: 200px;
+    }
+    .row2{
+        color: #ffaa01;
+    }
+    .row3{
+        color: #ffaa01;
+    }
+    .header-left{
+        font-weight: bold;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .header-right{
+        font-weight: bold;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .row4{
+        text-align: right;
+    }
+    .column-middle{
+        text-align: right;
+        padding-top: 5px;
+    }
+    .column-middle-links{
+        text-align: right;
+    }
+    .column-links{
+        padding-top: 8px;
+        text-align: left;
+    }
+    .column-left-info{
+        text-align: left;
+    }
+    .info-icon{
+        margin-right: 5px;
+    }
+    .info-para{
+        font-size: 18px;
+    }
+    .fbicon{
+        background-image: url("./Facebook_Icon.png");
+        background-size: 35px;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        height: 35px;
+        width: 35px;
+        margin-right: 10px;
+    }
+    .facebook-footer{
+        color:#ffaa01;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .facebook-footer:hover{
+        color: #42B7FF;
+        transition: 200ms ease-in;
+    }
+    .facebook-footer:hover .fbicon{
+        background-image: url("./Facebook_Hover.png");
+        transition: 200ms ease-in;
+    }
+    .shicon{
+        background-image: url("./Shopee_Icon.png");
+        background-size: 35px;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        height: 35px;
+        width: 35px;
+        margin-right: 10px;
+    }
+    .shopee-footer{
+        color:#ffaa01;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .shopee-footer:hover{
+        color: #ff3939;
+        transition: 200ms ease-in;
+    }
+    .shopee-footer:hover .shicon{
+        background-image: url("./Shopee_Hover.png");
+        transition: 200ms ease-in;
+    }
+    .laicon{
+        background-image: url("./Lazada_Icon.png");
+        background-size: 35px;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        height: 35px;
+        width: 35px;
+        margin-right: 10px;
+    }
+    .lazada-footer{
+        color:#ffaa01;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .lazada-footer:hover{
+        color: #ff7301;
+        transition: 200ms ease-in;
+    }
+    .lazada-footer:hover .laicon{
+        background-image: url("./Lazada_Hover.png");
+        transition: 200ms ease-in;
+    }
+    .follow-us{
+        color: #ffaa01;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .follow-us-fb{
+        background-image: url("./facebook_footer.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        background-color: #ffaa01;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .follow-us-fb:hover{
+        background-color: #42B7FF;
+        transition: 200ms ease-in;
+    }
+    .follow-us-ig{
+        background-image: url("./instagram_footer.png");
+        background-size: 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ffaa01;
+        border-radius: 10px;
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    .follow-us-ig:hover{
+        background-color: #b71dff;
+        transition: 200ms ease-in;
+    }
+    .follow-us-tk{
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ffaa01;
+        height: 30px;
+        width: 30px;
+        border: 0cm;
+        margin-right: 10px;
+        box-shadow: none;
+    }
+    .follow-us-tk:hover{
+        background-color:#000;
+        transition: 200ms ease-in;
+    }   
 }

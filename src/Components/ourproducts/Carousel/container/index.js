@@ -1,8 +1,8 @@
 import React from 'react'
 import {Carousel} from 'react-bootstrap'
-import Pic1 from '../Images/carousel_1.jpg'
-import Pic2 from '../Images/carousel_2.jpg'
-import Pic3 from '../Images/carousel_5.jpg'
+import Pic1 from '../Images/our_products_carousel_1.jpg'
+import Pic2 from '../Images/our_products_carousel_2.jpg'
+import Pic3 from '../Images/our_products_carousel_3.jpg'
 import './ourproductscarousel.css'
 import Fade from 'react-reveal/Fade';
 

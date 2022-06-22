@@ -1,5 +1,4 @@
-import CardBody from '@material-tailwind/react/CardBody';
-import { CardsContainer, Card, CardContent, Icon, Title, Paragraph, Img } from './StatusCardsElements';
+import { CardsContainer, Card, Title, Paragraph, Img } from './StatusCardsElements';
 import { motion } from "framer-motion";
 
 const sentence = {
@@ -40,29 +39,29 @@ const cardHeader = {
 export default function StatusCard({ img, title, children }) {
     return (
         <CardsContainer>
-            <Card>                                                                      
-                <Img>{img}</Img>                
-                <Title
-                    variants ={cardHeader}
-                    initial="hidden"
-                    animate="visible"
-                > 
-                    {title}
-                </Title>
-                <Paragraph
-                    variants ={sentence}
-                    initial="hidden"
-                    animate="visible"
-                >
-                    {children.split("").map((char,index) => {
-                        return(
-                            <motion.span key={char + "-" + index} 
-                            variants={letter}>
-                                {char}
-                            </motion.span>
+            <Card>                                                                   
+                    <Img>{img}</Img>                
+                    <Title
+                        variants ={cardHeader}
+                        initial="hidden"
+                        animate="visible"
+                    > 
+                        {title}
+                    </Title>
+                    <Paragraph
+                        variants ={sentence}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        {children.split("").map((char,index) => {
+                            return(
+                                <motion.span key={char + "-" + index} 
+                                variants={letter}>
+                                    {char}
+                                </motion.span>
+                            )}
                         )}
-                    )}
-                </Paragraph>
+                    </Paragraph>
             </Card>
         </CardsContainer>
     );

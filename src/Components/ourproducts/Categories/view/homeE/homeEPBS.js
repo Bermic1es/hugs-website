@@ -12,6 +12,7 @@ import Footer from '../../../../footer'
 
 import style from "../../../Categories/layout/layout.module.css";
 import Sidebar2 from "../../../Categories/layout/components/Sidebar";
+import { Helmet } from 'react-helmet';
 
 import Category from '../Category/Category';
 import {HomeE_PortableBluetoothSpeaker} from '../Category/Categories';
@@ -19,6 +20,9 @@ import {HomeE_PortableBluetoothSpeaker} from '../Category/Categories';
 export const HomeEPBS = props => {
 
   return <div>
+      <Helmet>
+        <title> HUG | Our Products</title>
+      </Helmet>
       <Navbar/>
       <CarouselOurProducts/>
       <VisitUs/>

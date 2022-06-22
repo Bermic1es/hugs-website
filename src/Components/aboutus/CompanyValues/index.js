@@ -4,8 +4,10 @@ import { FastDeliveryVector,HandleWithCareVector,QualityVector,CustomerServiceVe
 
 const CompanyValues = () => {
     return (
-        <InfoContainer>           
-             <Img paddingTop='23px'>{<TextVector/>}</Img>    
+        <InfoContainer>   
+            <InfoRow>
+                <Img paddingTop='23px'>{<TextVector/>}</Img>    
+            </InfoRow>        
             <RowsContainer>
                 <InfoRow marginTop='20px'>                                      
                     <Img>{<QualityVector/>}</Img>                                                                         

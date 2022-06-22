@@ -11,12 +11,16 @@ import Footer from '../../../../footer'
 
 import style from "../../../Categories/layout/layout.module.css";
 import Sidebar2 from "../../../Categories/layout/components/Sidebar";
+import { Helmet } from 'react-helmet';
 
 import Category from '../Category/Category';
 import {HomeAndLiving_Purifier} from '../Category/Categories';
 
 export const HomeLP = props => {
   return <div>
+      <Helmet>
+        <title> HUG | Our Products</title>
+      </Helmet>
       <Navbar/>
       <CarouselOurProducts/>
       <VisitUs/>

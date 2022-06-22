@@ -1,10 +1,10 @@
 import React from 'react'
 import {Carousel} from 'react-bootstrap'
-import Image1 from '../images/carousel_1.jpg'
-import Image2 from '../images/carousel_2.jpg'
-import Image3 from '../images/carousel_3.jpg'
-import Image4 from '../images/carousel_4.jpg'
-import Image5 from '../images/carousel_5.jpg'
+import Image1 from '../images/home_carousel_1.jpg'
+import Image2 from '../images/home_carousel_2.jpg'
+import Image3 from '../images/home_carousel_3.jpg'
+import Image4 from '../images/home_carousel_4.jpg'
+import Image5 from '../images/home_carousel_5.jpg'
 import './carousel.css'
 import Fade from 'react-reveal/Fade';
 

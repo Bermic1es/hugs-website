@@ -22,8 +22,19 @@ export const HeroContainer = styled.div`
         z-index: 2;
     }
 
-    @media (min-width: 375px ) and (max-width: 425px ) { 
-        height: 50px;
+    @media (max-width: 480px) { 
+        max-width: 480px;
+        background:#D9D9D9;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        max-width: 767px;
+        background:#D9D9D9;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+        max-width: 1024px;
+        background:#D9D9D9;
     }
 `
 
@@ -35,8 +46,18 @@ export const StatusCardsContainer = styled.div`
     position: relative;
     margin-top: 620px;
 
-    @media (min-width: 375px) and (max-width: 425px ) { 
-        background: red; 
+    @media (max-width: 480px ) { 
+        gap: 20px; 
+        margin-top: 450px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        gap: 20px; 
+        margin-top: 850px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+        margin-top: 550px;
     }
 `
 
@@ -49,6 +70,8 @@ export const HeroBg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
+
+    
 `
 export const VideoBg = styled.video`
     width: 100%;
@@ -56,4 +79,19 @@ export const VideoBg = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
+
+    @media (max-width: 480px) { 
+        object-fit: fill;
+        height: 50%;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        object-fit: fill;
+        height: 80%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+        object-fit: fill;
+        height: 90%;
+    }
 `

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card, ContentSection, CardTitle, CardContent } from './StepperElements';
 import { useSpring, config } from 'react-spring';
-import { useAnimation, motion } from "framer-motion";
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 10, (x - window.innerWidth / 2) / 90, 1]
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`

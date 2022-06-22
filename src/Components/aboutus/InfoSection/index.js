@@ -1,6 +1,6 @@
 import {React, useEffect, useState} from 'react'
 import LightSpeed from 'react-reveal/LightSpeed';
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap } from './InfoElements'
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine,Subtitle,Img, ImgWrap,TitleWrapper } from './InfoElements'
 import { motion, useAnimation } from "framer-motion";
 import {useInView} from 'react-intersection-observer';
 const infoTitle = {
@@ -35,7 +35,7 @@ const letter = {
         x: 0
     }
 }
-const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headLine,darkText,description,buttonLabel,img,alt,primary,dark,dark2}) => {
+const InfoSection = ({lightBg,id,imgStart,topLine,darkText,description,img}) => {
 
     const {ref, inView} = useInView();
     const playAnimation = useAnimation();
@@ -50,7 +50,7 @@ const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headLine,darkText,de
             playAnimation.start("hidden")
             setIsAnimationPlaying(false)
         }
-        console.log('view', inView)
+
     },[inView]);
   return (
     <>
@@ -59,25 +59,27 @@ const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headLine,darkText,de
                 <InfoRow imgStart={imgStart}>
                     <Column1>
                     <TextWrapper>
-                        <TopLine 
-                            ref={ref}
-                            variants ={infoTitle}
-                            animate={playAnimation}
-                        >
-                            {topLine.split("").map((char,index) => {
-                                return(
-                                    <motion.span 
-                                    key={char + "-" + index} 
-                                    variants={letter}
-                                    onAnimationComplete={() => {
-                                        setIsAnimationPlaying(false)
-                                      }}
-                                    >                              
-                                        {char}
-                                    </motion.span>
+                        <TitleWrapper>
+                            <TopLine 
+                                ref={ref}
+                                variants ={infoTitle}
+                                animate={playAnimation}
+                            >
+                                {topLine.split("").map((char,index) => {
+                                    return(
+                                        <motion.span 
+                                        key={char + "-" + index} 
+                                        variants={letter}
+                                        onAnimationComplete={() => {
+                                            setIsAnimationPlaying(false)
+                                        }}
+                                        >                              
+                                            {char}
+                                        </motion.span>
+                                    )}
                                 )}
-                            )}
-                        </TopLine>
+                            </TopLine>
+                        </TitleWrapper>             
                         <Subtitle 
                             darkText= {darkText}
                             ref={ref}
@@ -103,7 +105,7 @@ const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headLine,darkText,de
                     <Column2>
                         <ImgWrap>
                         <LightSpeed right>
-                        <Img src={img} alt={alt}/>
+                        <Img src={img}/>
                         </LightSpeed>
                         </ImgWrap>
                     </Column2>

@@ -13,11 +13,15 @@ import Sidebar2 from "./Categories/layout/components/Sidebar";
 import style from "./Categories/layout/layout.module.css";
 import './Categories/view/Category/category.css';
 import { ProductList } from './Categories/view/Category/AllProducts'
+import { Helmet } from 'react-helmet'
 
 const OurProducts = (props) => {
 
   return (
     <div>
+      <Helmet>
+        <title> HUG | Our Products</title>
+      </Helmet>
       <Navbar/>
       <CarouselOurProducts/>
       <VisitUs/>

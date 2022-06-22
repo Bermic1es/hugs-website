@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { keyframes } from 'styled-components';
 import { animated } from 'react-spring';
 import { motion } from "framer-motion";
 
@@ -9,6 +8,16 @@ export const StoryContainer = styled.div`
     @media screen and (max-width: 768px){
         padding: 100px 0;
     }
+
+    @media (max-width: 480px) { 
+      padding: 20px;
+      height: 530px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+      padding: 20px;
+      height: 560px;
+  }
 `
 
 export const StoryWrapper = styled.div`
@@ -27,6 +36,10 @@ export const Card = styled(animated.div)`
   padding:30px 40px;
   text-align:center;
   background: #f3f3f3;
+
+  @media (max-width: 480px) { 
+    max-height:500px;
+  }
 `
 
 export const ContentSection = styled.div`
@@ -34,6 +47,11 @@ export const ContentSection = styled.div`
   margin: auto;
   background: #fff;
   border-radius: 4px;
+
+  @media (max-width: 480px) { 
+    max-height:80%;
+    width: 100%;
+  }
 `
 export const CardTitle = styled(motion.h2)`
   font-size:17px;
@@ -42,12 +60,20 @@ export const CardTitle = styled(motion.h2)`
   color:#333;
   letter-spacing:1px;
   font-family: 'Montserrat';
+
+  @media (max-width: 480px) { 
+    font-size:14px;
+  }
 `
 export const CardContent = styled(motion.p)`
   font-size:16px;
   ine-height:1.8em;
   color:#777;
   font-family: 'proxima-nova';
+
+  @media (max-width: 480px) { 
+    font-size:13px;
+  }
 `
 export const Heading = styled.h1`
   padding-top: 50px;
@@ -58,6 +84,10 @@ export const Heading = styled.h1`
   letter-spacing: 4px; 
   line-height: 23px;
   font-family: 'Montserrat';
+
+  @media (max-width: 480px) { 
+    padding-top: 10px; 
+  }
 `
 
 export const ProcessWrapper = styled.div`
@@ -71,6 +101,12 @@ export const ProcessBarContainer = styled.div`
   margin:auto;
   height:100px;
   margin-top:65px;
+
+  @media (max-width: 480px) { 
+    margin-top:45px;
+  }
+
+ 
 `
 
 export const List = styled.ul`
@@ -81,6 +117,7 @@ export const List = styled.ul`
 	position:absolute;
 	width:100%;
 	margin-top:-40px
+  
 `
 
 export const ListItem = styled.li`
@@ -106,13 +143,22 @@ export const ListItem = styled.li`
   :active {
     color:orange;
   }
+  
 `
 
 export const ItemText = styled.div`
   position:absolute;
   width:100%;
-  bottom:0;
   font-size: 14px;
+
+  @media (max-width: 480px) { 
+    font-size: 6px;
+    margin-top: 5px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px){
+    margin-top: 5px;
+  }
 `
 export const Line = styled.div`
   width:80%;
@@ -136,17 +182,7 @@ export const LineProgress = styled.div`
   border-radius:50px;
   transition:all ease 0.9s;
 `
-export const FadeInUp = keyframes`
-  0% {
-    transform:translateY(15px);
-    opacity:0;
-  }
 
-  100% {
-    transform:translateY(0px);
-    opacity:1;
-  }
-`
 export const BigCircle = styled.div`
   content:" ";
   display:block;
